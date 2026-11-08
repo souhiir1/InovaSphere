@@ -240,8 +240,8 @@ export default function Contact() {
               </h2>
 
               <p>
-                Vous avez une idée en tête ou besoin d'un accompagnement
-                digital ? Notre équipe est à votre écoute.
+                {`Vous avez une idée en tête ou besoin d'un accompagnement
+                digital ? Notre équipe est à votre écoute.`}
               </p>
             </motion.div>
           </div>

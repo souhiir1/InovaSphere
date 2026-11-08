@@ -284,9 +284,9 @@ export default function Services() {
               </h1>
 
               <p className={styles.heroDescription}>
-                Du développement web et mobile à l'intelligence artificielle,
+             {` Du développement web et mobile à l'intelligence artificielle,
                 nous imaginons et construisons des solutions digitales qui
-                répondent aux vrais besoins de votre entreprise.
+                répondent aux vrais besoins de votre entreprise.`}  
               </p>
 
               <div className={styles.heroActions}>

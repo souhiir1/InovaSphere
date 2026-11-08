@@ -441,12 +441,12 @@ export default function Accueil() {
           >
             <span className={styles.sectionLabel}>
               <span className={styles.labelLine} />
-              LET'S BUILD SOMETHING
+            {`LET'S BUILD SOMETHING`}
             </span>
 
             <h2>
               Have an idea?
-              <span> Let's make it real.</span>
+              <span> {`Let's make it real.`}</span>
             </h2>
 
             <p>

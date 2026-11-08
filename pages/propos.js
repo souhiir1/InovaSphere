@@ -239,7 +239,7 @@ export default function Propos() {
                 <span>AI</span>
               </div>
 
-              <span className={styles.visualCoordinate}>36°43' N / 10°25' E</span>
+              <span className={styles.visualCoordinate}>{`36°43' N / 10°25' E`}</span>
               <span className={styles.visualIndex}>IS — 2025</span>
             </motion.div>
           </div>
@@ -499,7 +499,7 @@ export default function Propos() {
 
               <span className={styles.sectionLabel}>
                 <span className={styles.labelLine} />
-                LET'S MOVE FORWARD
+              {`LET'S MOVE FORWARD`}  
               </span>
 
               <h2>
