@@ -1,0 +1,96 @@
+
+.whatsappButton {
+  position: fixed;
+  right: 26px;
+  bottom: 26px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(145deg, #25d366, #128c7e);
+  box-shadow:
+    0 8px 25px rgba(18, 140, 126, 0.32),
+    0 0 0 5px rgba(37, 211, 102, 0.09);
+  text-decoration: none;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.whatsappButton:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 13px 30px rgba(18, 140, 126, 0.4),
+    0 0 0 7px rgba(37, 211, 102, 0.12);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.tooltip {
+  position: absolute;
+  right: 76px;
+  width: max-content;
+  max-width: calc(100vw - 120px);
+  padding: 10px 14px;
+  border: 1px solid rgba(119, 60, 168, 0.12);
+  border-radius: 8px;
+  color: #fff;
+  background: #21145f;
+  box-shadow: 0 5px 20px rgba(27, 19, 102, 0.18);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: normal;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease;
+  pointer-events: none;
+}
+
+.whatsappButton:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.whatsappButton:focus-visible {
+  outline: 3px solid #773ca8;
+  outline-offset: 5px;
+}
+
+@media (max-width: 600px) {
+  .whatsappButton {
+    right: 17px;
+    bottom: 18px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+
+  .tooltip {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsappButton,
+  .tooltip {
+    transition: none;
+  }
+}

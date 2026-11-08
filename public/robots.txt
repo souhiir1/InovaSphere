@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.inovasphere.tech
+
+# Sitemaps
+Sitemap: https://www.inovasphere.tech/sitemap.xml

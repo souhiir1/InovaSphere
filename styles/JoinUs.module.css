@@ -1,0 +1,339 @@
+/* JoinUs.module.css */
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1A1366;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #1A1366;
+  opacity: 0.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.textContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.companyInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.companyInfo > div {
+  flex: 1;
+  min-width: 300px;
+}
+
+.companyInfo h3 {
+  color: #1A1366;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.companyInfo h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #F8931F, #FFC107);
+}
+
+.companyInfo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.companyInfo li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  color: #1A1366;
+  line-height: 1.6;
+}
+
+.companyInfo li span {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.companyInfo p {
+  color: #1A1366;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.formContainer {
+  flex: 1;
+  min-width: 300px;
+}
+
+.formTitle {
+  color: #1A1366;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.formTitle::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #F8931F, #FFC107);
+}
+
+.form {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%; /* Ensure form groups take full width */
+  max-width: 100%; /* Prevent overflow */
+}
+
+.formGroup label {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #1A1366;
+}
+
+.formGroup label svg {
+  font-size: 0.9rem;
+  color: #F8931F;
+}
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box; /* Include padding in width calculation */
+  background: white;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: #F8931F;
+  box-shadow: 0 0 0 2px rgba(248, 147, 31, 0.2);
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.formGroup select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg fill='%231A1366' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 2.5rem;
+}
+
+.salaryType {
+  font-weight: normal;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.fileUploadContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fileUploadLabel {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #1A1366;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  width: fit-content;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  color: white !important;
+}
+
+.fileUploadLabel:hover {
+  background: #0e0a4d;
+  transform: translateY(-1px);
+}
+
+.fileInput {
+  display: none;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.removeFile {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0 0.3rem;
+  margin-left: auto;
+}
+
+.removeFile:hover {
+  color: #ff3b3b;
+}
+
+.submit {
+  background: linear-gradient(to right, #1A1366, #3A2C9E);
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.submit:hover {
+  background: linear-gradient(to right, #0e0a4d, #1A1366);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.message {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.message.success {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  border: 1px solid #2ecc71;
+}
+
+.message.error {
+  background: rgba(231, 76, 60, 0.2);
+  color: #e74c3c;
+  border: 1px solid #e74c3c;
+}
+
+.footerNote {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .contentWrapper {
+    flex-direction: column;
+  }
+
+  .companyInfo > div {
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    padding: 1.5rem;
+  }
+
+  .formTitle {
+    font-size: 1.5rem;
+  }
+
+  .submit {
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+}
